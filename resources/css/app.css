@@ -1,0 +1,6 @@
+.antialiased{
+    background-image: url('../../public/img/bg.png');
+    background-color: #0e1d34;
+    background-size: cover;
+    background-position: center;
+}
