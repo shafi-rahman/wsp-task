@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('company_contact_person', function (Blueprint $table) {
             $table->id();
             $table->integer('company_addres_id');
-            $table->string('contact_person', 150);
-            $table->string('contact_person_post', 100);
-            $table->string('contact_number', 50);
-            $table->string('contact_email', 150);
+            $table->string('contact_person', 150)->nullable();
+            $table->string('contact_person_post', 100)->nullable();
+            $table->string('contact_number', 50)->nullable();
+            $table->string('contact_email', 150)->nullable();
             $table->timestamps();
         });
     }

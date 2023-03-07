@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('client_infos', function (Blueprint $table) {
             $table->id();
-            $table->string('company_name', 150);
-            $table->string('company_alias', 50);
-            $table->string('company_type', 50);
-            $table->string('company_logo');
-            $table->string('company_description', 250);
+            $table->string('company_name', 150)->nullable();
+            $table->string('company_alias', 50)->nullable();
+            $table->string('company_type', 50)->nullable();
+            $table->string('company_logo')->nullable();
+            $table->string('company_description', 250)->nullable();
             $table->boolean('status');
             $table->timestamps();
         });
